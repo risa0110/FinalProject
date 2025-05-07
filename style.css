@@ -31,7 +31,7 @@ hr{
 }
 
 
-/*以下header*/
+/*header*/
 .icon-img {
     width: 54px;
     aspect-ratio: 1/1;
@@ -124,7 +124,7 @@ footer li a{
     color: #fff;
 }
 
-/*以下AboutUsページのCSS*/
+/*Style for AboutUs page*/
 /*form*/
 #contact-form{
     background-color: #2F4F4F;
