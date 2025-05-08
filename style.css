@@ -174,7 +174,6 @@ footer li a{
     overflow: scroll;
     white-space: nowrap;
     width: 1250px;
-    scrollbar-width: none;
     padding-left: 80px;
 }
 .pictures img{
