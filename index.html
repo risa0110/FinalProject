@@ -12,25 +12,6 @@
         href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=M+PLUS+1p&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <style>
-        h1,
-        h2,
-        h3,
-        aside {
-            font-family: "Playfair Display", serif;
-            font-optical-sizing: auto;
-            font-weight: 800;
-            font-style: normal;
-            color: #2F4F4F;
-        }
-
-        p,
-        li {
-            font-family: "Poppins", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            color: #fff;
-        }
-
         span {
             font-weight: bold;
             color: #1b7971;
@@ -41,12 +22,11 @@
 
 <body>
     <main>
-        <header>
-            <a href="#">
-                <div class="header-title">
-                    <img class="icon-img" src="./assets/travelicon.png" alt="site icon">
-                    <h1>WanderYouth</h1>
-                </div>
+        <header style="padding: 15px 0">
+            <a href="#" id="header-title">
+                <!--header-titleクラスがここにあったよ<div>で-->
+                <img class="icon-img" src="./assets/travelicon.png" alt="site icon">
+                <h1 style="font-size: 36px;">WanderYouth</h1>
             </a>
             <nav>
                 <ul>
@@ -60,7 +40,7 @@
         <hr>
         <div class="main-img">
             <img src="./assets/bruno-soares-ISKDP90vvgU-unsplash.jpg" alt="">
-            <h1>WHERE NEXT?</h1>
+            <h1 class="typing">WHERE NEXT?</h1>
         </div>
         <article class="intro">
             <section>
@@ -77,7 +57,7 @@
             </section>
         </article>
         <article class="main-content">
-            <section>
+            <section id="section1">
                 <h2>Where do you want to go?</h2>
                 <section class="content-travel">
                     <img src="./assets/aaron-sebastian-bfgEYpS0Znk-unsplash.jpg" alt="">
@@ -103,6 +83,7 @@
                     </section>
                 </section>
                 <section class="content-travel">
+                    <img src="./assets/heidi-kaden-NncAbldgViA-unsplash.jpg" alt="">
                     <section>
                         <h3>Immerse Yourself in Culture</h3>
                         <aside>Recommended: Morocco</aside>
@@ -122,7 +103,6 @@
                             <li>Ideal For: Culture seekers, photographers, travelers interested in history</li>
                         </ul>
                     </section>
-                    <img src="./assets/heidi-kaden-NncAbldgViA-unsplash.jpg" alt="">
                 </section>
                 <section class="content-travel">
                     <img src="./assets/lisa-van-vliet-TK7I7tkWRaU-unsplash.jpg" alt="">
@@ -147,6 +127,8 @@
                     </section>
                 </section>
                 <section class="content-travel">
+                    <img src="./assets/nick-karvounis-Prb-sjOUBFs-unsplash.jpg" alt="">
+
                     <section>
                         <h3>Relax and Refresh</h3>
                         <aside>Recommended: Portugal</aside>
@@ -166,12 +148,11 @@
                             <li>Ideal For: First-time travelers, couples, students looking for a slow-paced trip</li>
                         </ul>
                     </section>
-                    <img src="./assets/nick-karvounis-Prb-sjOUBFs-unsplash.jpg" alt="">
                 </section>
             </section>
-            <section>
+            <section id="section2">
                 <section>
-                    <h2>Our Service</h2>
+                    <h2 style="margin-bottom: 0;">Our Service</h2>
                     <hr>
                     <p style="text-align: center; width: 100%;">We provide personalized travel support to help young
                         adventurers find unforgettable experiences
@@ -186,7 +167,7 @@
                             perfect fit. Hike through the majestic Southern Alps, cruise through the fjords of Milford
                             Sound, and explore glowworm-lit caves. Designed for students on a budget, this plan offers a
                             once-in-a-lifetime experience with recommended stays of 7-10 days.</p>
-                        <a href="">VIEW MORE</a> <!--button/link for the other detailed page-->
+                        <a href="" id="view-button">VIEW MORE</a> <!--button/link for the other detailed page-->
                     </section>
                 </section>
             </section>
@@ -196,13 +177,14 @@
         <nav>
             <ul>
                 <li><a id="current-page" href="#">Home</a></li>
-                <li><a href="./AboutUs.html">About/Contact Us</a></li>
                 <li><a href="#">Category</a></li>
                 <li><a href="#">Service</a></li>
+                <li><a href="./AboutUs.html">About Us</a></li>
             </ul>
         </nav>
         <img class="icon-img" src="./assets/travel-white.png" alt="">
         <p>©2025 Wander Youth. All rights reserved.</p>
+        <a href="#"><img id="back-top-icon" src="./assets/back-to-top.png" alt=""></a>
     </footer>
 </body>
 

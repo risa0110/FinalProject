@@ -3,133 +3,204 @@
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     overflow-x: hidden;
-    background-color: rgba(113, 174, 209, 0.55);
+    background-color: var(--background-color);
 }
-main{
-    margin: 0 40px;
+
+main {
+    margin: 0 3vw;
 }
-h2{
-    margin-bottom: 20px;
-    text-align: center;
-}
-img {
-    width: 100%;
-}
-li {
-    list-style: none;
-}
+
+
 a {
     text-decoration: none;
-    color: #2F4F4F;
+    color: var(--dark-color);
 }
-hr{
-    background-color: #2F4F4F;
+
+hr {
+    background-color: var(--dark-color);
     border: none;
     height: 1px;
 }
 
-
-/*header*/
-.icon-img {
-    width: 54px;
-    aspect-ratio: 1/1;
+h2 {
+    margin-bottom: 5vh;
+    text-align: center;
 }
-header, footer{
+
+/*Variables*/
+:root {
+    --background-color: rgba(113, 174, 209, 0.55);
+    --text-base-color: #FFF;
+    --dark-color: #2F4F4F;
+    --light-color: #30D5C8;
+    --p-size: 18px;
+    --h-size: 50px;
+    --h-size-bigger: 65px;
+    --font-family-base: "Poppins", sans-serif;
+    --font-faminly-heading: "Playfair Display", serif;
+}
+/*Fonts*/
+h1,h2,h3,aside {
+    font-family: var(--font-faminly-heading);
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    color: var(--dark-color);
+}
+
+p,
+li {
+    font-family: var(--font-family-base);
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-base-color);
+}
+/*common setting for <header> & <footer>*/
+header,
+footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.header-title{
-    display: flex;
-    align-items: center;
-    padding: 15px 0;
-}
-header li, footer li{
+
+header li,
+footer li {
+    list-style: none;
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 2vw;
 }
-/*except the footer-list:firstchild*/
-footer li:first-child{
+
+header li:first-child,
+footer li:first-child {
     margin-left: 0;
 }
 
-/*top-img*/
-.main-img{
-    position: relative;
-    top: -116px;
-    left: -40px;
+/*変なずれが出ないように最初の子供だけ余白を削除。pseudo使用例*/
+/*header style*/
+.icon-img {
+    width: 5ex;
+    aspect-ratio: 1/1;
 }
-.main-img img{
+
+#header-title {
+    display: flex;
+    align-items: center;
+}
+
+/*ここにもともとpaddingあったけど、header自体に移してヘッダーにちゃんと余白ができるように変更*/
+
+/*top-img*/
+.main-img {
+    height: 70ex;
     position: relative;
+    z-index: -1;
+    /*↓ここ計算の方がいいかも...*/
+    top: -15ex;
+    left: -5ex;
+}
+
+.main-img img {
+    position: absolute;
     opacity: 0.7;
     z-index: -1;
-    height: 560px;
-    width: calc(100% + 80px);
+    width: calc(100% + 10ex);
+    height: 90%;
 }
-.main-img h1{
+
+.typing {
     position: absolute;
-    top:50%;
-    left: calc(50% + 80px);
-    transform: translate(-70%,-50%);
+    top: 50%;
+    left: calc(50% + 4ex);
+    transform: translate(-70%, -50%);
+    width: 0;
+    overflow: hidden;
+    border-right: 2px solid white;
+    animation: typing 3s steps(11) forwards, blink 0.5s step-end infinite ;
 }
 
-/*intro*/
-.intro{
+/*introduce-section style*/
+.intro {
     text-align: center;
-    padding: 0 250px;
-    margin-top: 100px;
-}
-.intro p{
-    display: inline;
+    margin: 8vh 14vw;
+    animation: fadeIn 1.5s ease-out;
 }
 
-.main-content{
-    padding: 0 180px;
-    height: 100%;
+.intro p {
+    display: inline;
+    /*span(inline)使うためだけに使ってる...*/
 }
-.main-content p{
-    width: 450px;
-    margin-bottom: 10px;
+
+/*main-content-section style
+ここのアニメーションはjsと一緒に作るか、削除するかの二択ね*/
+.main-content {
+    padding: 0 12vw;
+    animation: fadeIn 1.5s ease-out;
 }
+/*section1*/
 .content-travel{
+    margin-bottom: 10vh;
+    align-items: center;
     display: flex;
-    gap: 20px;
+    gap: 2vw;
 }
-.main-content img{
-    width: 282px;
+#section1>.content-travel:nth-child(3), #section1>.content-travel:last-child{
+    flex-direction: row-reverse;
+}
+.content-travel:last-child {
+    margin-bottom: 0;
+}
+.content-travel aside {
+    margin-bottom: 2vh;
+}
+.content-travel p {
+    margin-bottom: 2vh;
+}
+.content-travel ul{
+    margin-left: 1vw;
+}
+#section1 img {
+    width: 20vw;
     aspect-ratio: 1/1;
-    z-index: -1;
 }
-.main-content a{
-    border: #2F4F4F solid 1px;
-    border-radius: 20px;
-    padding: 2px 8px;
+/*section2 style*/
+#section2{
+    margin-top: 8vh;
 }
-.main-content>section{
-    margin-top: 100px;
+#section2 hr{
+    width: 50vw; 
+    margin: 2vh 0;
+    justify-self: center;
 }
-.main-content>section>section{
-    margin-top: 50px;
+#section2>section:first-child{
+    margin-bottom: 3vh;
 }
+#view-button {
+    border: var(--dark-color) solid 1px;
+    border-radius: 20vw;
+    padding: 1% 4%;
+}
+
+/*↑こいつもbotton-classとかにしてもいいかも。なんのことかわかりにく*/
+
 /*footer*/
-footer{
-    background-color: #2F4F4F;
-    height: 250px;
-    margin: 0;
-    padding: 70px;
+footer {
+    background-color: var(--dark-color);
+    padding: 8%;
 }
-footer li a{
-    color: #fff;
+
+footer li a {
+    color: var(--text-base-color);
 }
 
 /*Style for AboutUs page*/
 /*form*/
-#contact-form{
+#contact-form {
     background-color: #2F4F4F;
     width: 100vw;
-    margin:  0 calc(50% - 50vw);
+    margin: 0 calc(50% - 50vw);
     padding: 100px 0;
     display: grid;
     justify-content: center;
@@ -137,19 +208,23 @@ footer li a{
     grid-template-rows: 142px 323px;
     gap: 50px;
 }
-#contact-form form{
+
+#contact-form form {
     grid-column: 1/2;
     display: grid;
     grid-template-rows: 44px 44px 44px 17px;
     gap: 45px;
 }
-#contact-form form input, #contact-form form textarea{
+
+#contact-form form input,
+#contact-form form textarea {
     border: none;
     background-color: transparent;
     border-bottom: #fff solid 1.5px;
     resize: none;
 }
-#contact-form form button{
+
+#contact-form form button {
     background-color: #30D5C8;
     border-radius: 50px;
     border: none;
@@ -159,34 +234,133 @@ footer li a{
 }
 
 /*infomation-sec*/
-.info img{
+.info img {
     width: 30px;
     aspect-ratio: 1/1;
     margin-right: 10px;
 }
-.info div{
+
+.info div {
     display: flex;
     margin-bottom: 20px;
 }
 
 /*pictures*/
-.pictures{
+.pictures {
     overflow: scroll;
     white-space: nowrap;
     width: 1250px;
     padding-left: 80px;
 }
-.pictures img{
+
+.pictures img {
     height: 400px;
     width: 300px;
 }
 
 /*header-hover*/
-header li:hover, footer li:hover{
-    opacity: 0.5;
+header li:hover,
+footer li:hover {
+    opacity: 0.4;
 }
-#current-page{
+
+#current-page {
     color: #1b7971;
     font-weight: bold;
 }
+/*back to top
+ここ押したらスクロールで戻るようにしたい！&様子が変！*/
+#back-top-icon{
+    height: 5ch;
+    position: fixed;
+    top: 87vh;
+    left: 94vw;
+}
 
+/*Animation*/
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 11ch;
+    }
+}
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Media queries*/
+/*desktop*/
+@media screen and (min-width: 1440px) {}
+
+/*tablet?*/
+@media screen and (min-width:481px) {
+    * {
+        font-size: var(--p-size);
+    }
+
+    h1 {
+        font-size: var(--h-size-bigger);
+        white-space: nowrap;
+    }
+
+    h2 {
+        font-size: var(--h-size);
+    }
+}
+
+/*iphone*/
+@media screen and (max-width:480px) {
+    .main-img{
+        display: none;
+    }
+    header>nav{
+        display: none;
+    }
+    .main-content{
+        text-align: center;
+    }
+    #section1 img{
+        object-fit: cover;
+        width: 100%;
+        aspect-ratio: 2/1;
+    }
+    .content-travel{
+        display: block;
+        align-items: center;
+    }
+    #section2{
+        margin-bottom: 7vh;
+    }
+    footer{
+        display: block;
+        text-align: center;
+    }
+    footer>img{
+        margin: 2vh 0;
+    }
+    /*About Us Page*/
+    .pictures{
+        width: 100%;
+        white-space: normal;
+        padding: 0;
+        text-align: center;
+    }
+    #contact-form{
+        grid: none;
+        padding: 3ex;
+    }
+}
