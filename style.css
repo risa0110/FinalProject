@@ -177,7 +177,7 @@ footer li:first-child {
 #section2>section:first-child{
     margin-bottom: 3vh;
 }
-#view-button {
+#button {
     border: var(--dark-color) solid 1px;
     border-radius: 20vw;
     padding: 1% 4%;
@@ -196,12 +196,26 @@ footer li a {
 }
 
 /*Style for AboutUs page*/
+/*pictures*/
+.pictures {
+    overflow: scroll;
+    white-space: nowrap;
+    width: 1250px;
+    padding-left: 80px;
+}
+
+.pictures img {
+    height: 400px;
+    width: 300px;
+}
 /*form*/
-#contact-form {
+#contact-faq{
     background-color: #2F4F4F;
     width: 100vw;
     margin: 0 calc(50% - 50vw);
     padding: 100px 0;
+}
+#contact-form {
     display: grid;
     justify-content: center;
     grid-template-columns: 500px 244px;
@@ -244,24 +258,26 @@ footer li a {
     display: flex;
     margin-bottom: 20px;
 }
-
-/*pictures*/
-.pictures {
-    overflow: scroll;
-    white-space: nowrap;
-    width: 1250px;
-    padding-left: 80px;
+/*FAQ section*/
+#FAQ{
+    margin: 10%;
 }
-
-.pictures img {
-    height: 400px;
-    width: 300px;
+#FAQ h2::before{
+    content: '';
+    display: inline-block;
+    width: 80px;
+    aspect-ratio: 1/1;
+    background-image: url(./assets/who.png);
+    background-size: contain;
+    vertical-align: bottom;
+    margin-right: 1rem;
 }
 
 /*header-hover*/
 header li:hover,
-footer li:hover {
-    opacity: 0.4;
+footer li:hover,
+#button:hover {
+    opacity: 0.6;
 }
 
 #current-page {

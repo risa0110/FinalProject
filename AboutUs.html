@@ -18,7 +18,7 @@
         <header style="padding: 15px 0">
             <a href="./index.html" id="header-title">
                 <!--header-titleクラスがここにあったよ<div>で-->
-                <img class="icon-img" src="./assets/travelicon.png" alt="site icon">
+                <img class="icon-img" src="./assets/travelicon_11zon.webp" alt="site icon">
                 <h1 style="font-size: 36px;">WanderYouth</h1>
             </a>
             <nav>
@@ -53,51 +53,146 @@
         <section class="scroll-sec" style="margin-top: 100px;">
             <h2>Pictures</h2>
             <div class="pictures">
-                <img src="./assets/igor-sporynin-l74YMgF8DMU-unsplash.jpg" alt="">
-                <img src="./assets/kelly-repreza-YF-puAvrlB8-unsplash.jpg" alt="">
-                <img src="./assets/casey-horner-9HyVwpOOSBI-unsplash.jpg" alt="">
-                <img src="./assets/lisa-van-vliet-TK7I7tkWRaU-unsplash.jpg" alt="">
-                <img src="./assets/bruce-tang-ARwxj_hB5Ok-unsplash.jpg" alt="">
-                <img src="./assets/vince-gx-lDIjGidOrQ0-unsplash.jpg" alt="">
+                <img src="./assets/igor-sporynin-l74YMgF8DMU-unsplash_11zon.webp" alt="gallery-pic1">
+                <img src="./assets/kelly-repreza-YF-puAvrlB8-unsplash_11zon.webp" alt="gallery-pic2">
+                <img src="./assets/casey-horner-9HyVwpOOSBI-unsplash_11zon.webp" alt="gallery-pic3">
+                <img src="./assets/lisa-van-vliet-TK7I7tkWRaU-unsplash_11zon-large.webp" alt="gallery-pic4">
+                <img src="./assets/bruce-tang-ARwxj_hB5Ok-unsplash_11zon.webp" alt="gallery-pic5">
+                <img src="./assets/vince-gx-lDIjGidOrQ0-unsplash_11zon.webp" alt="gallery-pic6">
             </div>
         </section>
-        <article id="contact-form">
-            <section>
-                <h1 style="color: #fff; font-size: 30px;">Contact Us</h1>
-                <p>Have questions about our tours or need help finding your next unforgettable trip? Fill out the form
-                    below and we’ll get back to you soon!</p>
+        <div id="contact-faq">
+            <section id="contact-form">
+                <section>
+                    <h1 style="color: #fff; font-size: 30px;">Contact Us</h1>
+                    <p>Have questions about our tours or need help finding your next unforgettable trip? Fill out the
+                        form
+                        below and we’ll get back to you soon!</p>
+                </section>
+                <form action="/submit-form" method="post">
+                    <input type="text" name="fullname" placeholder="Full Name">
+                    <input type="email" name="email" placeholder="E-mail">
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <button type="submit" id="button">Contact Us</button>
+                </form>
+                <section class="info">
+                    <h2 style="color: #fff; text-align: start;">Info</h2>
+                    <div>
+                        <img src="./assets/mail-icon.webp" alt="mail-icon">
+                        <p>wanderyouth@gmail.com</p>
+                    </div>
+                    <div>
+                        <img src="./assets/tel-icon.webp" alt="telphone-icon">
+                        <p>+1 879 3483 3432</p>
+                    </div>
+                    <div>
+                        <img src="./assets/office-icon.webp" alt="office-icon">
+                        <p>12 Waterfront</p>
+                    </div>
+                    <div>
+                        <img src="./assets/clock-icon.webp" alt="clock-icon">
+                        <p>9:00 - 18:00</p>
+                    </div>
+                    <div>
+                        <img src="./assets/Rectangle 12.webp" alt="instagram-icon">
+                        <img src="./assets/twitter-icon.webp" alt="twitter-icon">
+                        <img src="./assets/FACEBOOK-icon.webp" alt="facebook-icon">
+                    </div>
+                </section>
             </section>
-            <form action="/submit-form" method="post">
-                <input type="text" name="fullname" placeholder="Full Name">
-                <input type="email" name="email" placeholder="E-mail">
-                <textarea name="message" id="" placeholder="Message"></textarea>
-                <button type="submit">Contact Us</button>
-            </form>
-            <section class="info">
-                <h2 style="color: #fff; text-align: start;">Info</h2>
-                <div>
-                    <img src="./assets/mail-icon.png" alt="">
-                    <p>wanderyouth@gmail.com</p>
-                </div>
-                <div>
-                    <img src="./assets/tel-icon.png" alt="">
-                    <p>+1 879 3483 3432</p>
-                </div>
-                <div>
-                    <img src="./assets/office-icon.png" alt="">
-                    <p>12 Waterfront</p>
-                </div>
-                <div>
-                    <img src="./assets/clock-icon.png" alt="">
-                    <p>9:00 - 18:00</p>
-                </div>
-                <div>
-                    <img src="./assets/Rectangle 12.png" alt="">
-                    <img src="./assets/twitter-icon.png" alt="">
-                    <img src="./assets/FACEBOOK-icon.png" alt="">
-                </div>
-            </section>
-        </article>
+            <article id="FAQ">
+                <section>
+                    <h2 style="margin-bottom: 0; color: #fff;">FAQs</h2>
+                    <p>Frequently Asked Questions</p>
+                </section>
+                <section>
+                    <section>
+                        <!--要修正-->
+                        <h3 style="color: #fff;">About the Service</h3>
+                        <details>
+                            <summary>
+                                <span>Q1: Who is this service for?</span>
+                            </summary>
+                            <p>
+                                A: This service is perfect for young travelers who want to go abroad but haven’t decided
+                                on
+                                a destination yet. Just tell us your preferences, and we’ll recommend the best travel
+                                spot
+                                for you.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>
+                                <span>Q2: What countries can I travel to?</span>
+                            </summary>
+                            <p>
+                                A: We offer suggestions for a wide range of destinations—from Asia to Europe to South
+                                America. We’ll recommend based on your budget, goals, and interests.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>
+                                <span>Q3: How does the process work?</span>
+                            </summary>
+                            <p>
+                                A: It's simple! Fill out a short form → Get a free consultation → Receive personalized
+                                suggestions → Finalize booking → Enjoy your trip! </p>
+                        </details>
+                    </section>
+                    <section>
+                      <h3 style="color: #fff;">Pricing & Costs</h3>
+                      <details>
+                            <summary>
+                                <span>Q4: Does it cost money to use the service?</span>
+                            </summary>
+                            <p>
+                               A: The initial consultation and travel suggestions are free. You’ll only be charged when booking flights, accommodations, or optional support. </p>
+                        </details>
+                        <details>
+                            <summary>
+                                <span>Q5: Can I use this service with a small budget?</span>
+                            </summary>
+                            <p>
+                              A: Absolutely! We specialize in helping you make the most of your budget and still enjoy a meaningful experience abroad.</p>
+                        </details>
+                    </section>
+                    <section>
+                      <h3 style="color: #fff;">Travel Preparation</h3>
+                      <details>
+                            <summary>
+                                <span>Q6: I can’t speak English well. Is that a problem?</span>
+                            </summary>
+                            <p>
+                              A: Not at all! We’ll suggest destinations that are safe and tourist-friendly, with optional language support if needed. </p>
+                        </details>
+                        <details>
+                            <summary>
+                                <span>Q7: Will I get help with visas and vaccinations?</span>
+                            </summary>
+                            <p>
+                              A: Yes, we provide guidance on all necessary documents and health-related requirements based on your destination.</p>
+                        </details>
+                    </section>
+                    <section>
+                      <h3 style="color: #fff;">Safety & Support</h3>
+                      <details>
+                            <summary>
+                                <span>Q8: I’ve never traveled alone. Is it safe?</span>
+                            </summary>
+                            <p>
+                              A: Many of our clients are first-time travelers. We provide detailed prep and safety tips to help you feel confident and secure. </p>
+                        </details>
+                        <details>
+                            <summary>
+                                <span>Q9: What happens if something goes wrong during my trip?</span>
+                            </summary>
+                            <p>
+                              A: We offer emergency contact support and can connect you with local partners to help you if needed.</p>
+                        </details>
+                    </section>
+                </section>
+            </article>
+        </div>
     </main>
     <hr style="background-color: #fff;">
     <footer>
@@ -109,8 +204,9 @@
                 <li><a id="current-page" href="#">About Us</a></li>
             </ul>
         </nav>
-        <img class="icon-img" src="./assets/travel-white.png" alt="">
+        <img class="icon-img" src="./assets/travel-white.webp" alt="site-icon2">
         <p>©2025 Wander Youth. All rights reserved.</p>
+        <a href="#"><img id="back-top-icon" src="./assets/back-to-top.webp" alt="back-to-top icon"></a>
     </footer>
 </body>
 
