@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -97,7 +98,6 @@ footer li:first-child {
     height: 70ex;
     position: relative;
     z-index: -1;
-    /*↓ここ計算の方がいいかも...*/
     top: -15ex;
     left: -5ex;
 }
@@ -152,10 +152,7 @@ footer li:first-child {
 .content-travel:last-child {
     margin-bottom: 0;
 }
-.content-travel aside {
-    margin-bottom: 2vh;
-}
-.content-travel p {
+.content-travel aside{
     margin-bottom: 2vh;
 }
 .content-travel ul{
@@ -177,7 +174,7 @@ footer li:first-child {
 #section2>section:first-child{
     margin-bottom: 3vh;
 }
-#button {
+.button {
     border: var(--dark-color) solid 1px;
     border-radius: 20vw;
     padding: 1% 4%;
@@ -289,8 +286,8 @@ footer li:hover,
 #back-top-icon{
     height: 5ch;
     position: fixed;
-    top: 87vh;
-    left: 94vw;
+    top: 91%;
+    right: 4%;
 }
 
 /*Animation*/
@@ -321,8 +318,7 @@ footer li:hover,
 /*Media queries*/
 /*desktop*/
 @media screen and (min-width: 1440px) {}
-
-/*tablet?*/
+/*tablet*/
 @media screen and (min-width:481px) {
     * {
         font-size: var(--p-size);
@@ -337,8 +333,7 @@ footer li:hover,
         font-size: var(--h-size);
     }
 }
-
-/*iphone*/
+/*mobile*/
 @media screen and (max-width:480px) {
     .main-img{
         display: none;
