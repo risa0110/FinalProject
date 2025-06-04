@@ -78,7 +78,6 @@ footer li:first-child {
     margin-left: 0;
 }
 
-/*変なずれが出ないように最初の子供だけ余白を削除。pseudo使用例*/
 /*header style*/
 .icon-img {
     width: 5ex;
@@ -89,8 +88,6 @@ footer li:first-child {
     display: flex;
     align-items: center;
 }
-
-/*ここにもともとpaddingあったけど、header自体に移してヘッダーにちゃんと余白ができるように変更*/
 
 /*top-img*/
 .main-img {
@@ -129,11 +126,9 @@ footer li:first-child {
 
 .intro p {
     display: inline;
-    /*span(inline)使うためだけに使ってる...*/
 }
 
-/*main-content-section style
-ここのアニメーションはjsと一緒に作るか、削除するかの二択ね*/
+/*main-content-section style*/
 .main-content {
     padding: 0 12vw;
     animation: fadeIn 1.5s ease-out;
@@ -161,7 +156,7 @@ footer li:first-child {
     width: 20vw;
     aspect-ratio: 1/1;
 }
-/*section2 style*/
+/*section2*/
 #section2{
     margin-top: 8vh;
 }
@@ -178,8 +173,6 @@ footer li:first-child {
     border-radius: 20vw;
     padding: 1% 4%;
 }
-
-/*↑こいつもbotton-classとかにしてもいいかも。なんのことかわかりにく*/
 
 /*footer*/
 footer {
@@ -288,8 +281,7 @@ footer li:hover,
     color: #1b7971;
     font-weight: bold;
 }
-/*back to top
-ここ押したらスクロールで戻るようにしたい！&様子が変！*/
+/*back to top*/
 #back-top-icon{
     height: 5ch;
     position: fixed;
