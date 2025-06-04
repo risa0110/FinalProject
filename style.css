@@ -46,7 +46,6 @@ h2 {
 /*Fonts*/
 h1,h2,h3,aside {
     font-family: var(--font-faminly-heading);
-    font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
     color: var(--dark-color);
