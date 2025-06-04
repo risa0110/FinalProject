@@ -281,11 +281,11 @@ footer li a {
 /*header-hover*/
 header li:hover,
 footer li:hover,
-#button:hover {
+.button:hover {
     opacity: 0.6;
 }
 
-#current-page {
+.current-page {
     color: #1b7971;
     font-weight: bold;
 }
@@ -296,6 +296,10 @@ footer li:hover,
     position: fixed;
     top: 91%;
     right: 4%;
+    transition: opacity 1s;
+}
+#back-top-icon:hover{
+    opacity: 0.4;
 }
 
 /*Animation*/
