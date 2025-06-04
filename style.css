@@ -257,7 +257,15 @@ footer li a {
 }
 /*FAQ section*/
 #FAQ{
-    margin: 10%;
+    color: #FFF;
+    margin: 20% 10% 0;
+}
+#FAQ h2, #FAQ h3{
+    color: #FFF;
+    font-weight: 900;
+}
+#FAQ h3{
+    margin: 2rem 0 1rem;
 }
 #FAQ h2::before{
     content: '';
