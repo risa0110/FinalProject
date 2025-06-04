@@ -264,7 +264,7 @@ footer li a {
     display: inline-block;
     width: 80px;
     aspect-ratio: 1/1;
-    background-image: url(./assets/who.png);
+    background-image: url(./assets/icon/who.png);
     background-size: contain;
     vertical-align: bottom;
     margin-right: 1rem;
