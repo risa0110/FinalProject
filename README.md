@@ -1,7 +1,9 @@
 # ✈Explore Beyond - Youth Travel Support Site  
 This is for the assignment -Final Project-
-A fictional company website for a travel support company that helps young people find life-changing international travel experiences. The site recommends countries based on interests and offers unique tour plans.
-
+A fictional company website for a travel support company that helps young people find life-changing international travel experiences. The site recommends countries based on interests and offers unique tour plans.  
+本プロジェクトはTamwood International Collegeでのプログラムの課題として制作した作品の1つです。    
+架空の旅行サポートサービスを提供する企業のサイトとなっております。  
+  
 ## 🖼️CREDITS - Resources Used
 **Photos by Unsplash**: https://unsplash.com/ja  
 **icons from ICOON MONO**: https://icooon-mono.com/   
@@ -9,6 +11,7 @@ A fictional company website for a travel support company that helps young people
 
 ## 🎨DESIGN
 **You can view the design prototype on Figma here**: https://www.figma.com/design/7V5o4q6hHwosJr4DmEBRF4/Tamwood-1st-term-Final-Project?node-id=0-1&p=f&t=6bV4EO0rkScjCLQu-0
+Figmaで制作したデザインはこちらのリンクより閲覧可能です。  
 
 ## 🧑‍💻AUTHOR  
 Created by Risa Hasegawa  
